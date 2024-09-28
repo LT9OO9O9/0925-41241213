@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Flip Card Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="controls">
+        <button id="start-game-btn" onclick="startGame()">開始遊戲</button>
+        <button onclick="flipAllToFront()">全部翻到正面</button>
+        <button onclick="flipAllToBack()">全部翻到背面</button>
+        <div id="countdown" style="display: none;">倒數: <span id="countdown-timer">10</span> 秒</div>
+    </div>
+
+    <div class="card-container" id="card-container">
+        <!-- 卡片將由 JavaScript 動態生成 -->
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
